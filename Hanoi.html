@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Towers of Hanoi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="body">
+    <h1>Towers of Hanoi</h1>
+    <p>
+        <input type="button" onclick="hanoi.start()" value="Start"/>
+        <input type="button" onclick="hanoi.stop()" value="Stop"/>
+        <input type="button" onclick="hanoi.reset()" value="Reset"/>
+        <span>&#160;&#160;&#160;&#160;</span>
+        <label for="number">Disks:</label>
+        <select id="number" onchange="hanoi.setNumber()">
+            <option value="4" selected="yes">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+        <span>&#160;&#160;&#160;&#160;</span>
+        <label for="speed">Speed:</label>
+        <select id="speed" onchange="hanoi.setSpeed()">
+            <option value="0.25">0.25</option>
+            <option value="0.5">0.5</option>
+            <option value="1" selected="yes">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+    </p>
+    <p id="status">&#160;</p>
+    <script src="Hanoi.js" type="text/javascript" language="JavaScript"></script>
+</body>
+</html>
